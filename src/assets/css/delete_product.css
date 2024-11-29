@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1900px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   
+}
+
+h1#details {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th, .product-table td {
+    border: 2px solid #050000;
+    padding: 14px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #03136b;
+    color: white;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:hover {
+    background-color: #98b0cc;
+}
+.delete-button {
+    color: #ff0000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
+form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #03136b;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+form button[type="submit"] {
+    background-color: #03136b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #020e5a;
+}

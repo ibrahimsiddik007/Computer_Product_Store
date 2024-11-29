@@ -1,0 +1,87 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+        width: 95%;
+        margin: 10px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+header {
+        background-image: url('../images/customer_side_image.jpg');
+        color: white;
+        padding: 30px;
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+}
+
+nav{
+    background: #2a1f85;
+    border-radius: 2px 2px 2px 2px;
+    top: 20%;
+    padding: 2px;
+    position: relative;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 60px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #0a5efa;
+    transition-behavior: smooth;
+}
+
+nav ul li.welcome {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: -7px;
+    
+}
+
+.search-form input[type="text"] {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #274cf1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #265a9e;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient( #f4f4f4, #e2e2e2);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 200vh;
+}
+
+h2 {
+    text-align: left;
+    color: #0f0f0f;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+form {
+    background-color: #f7f7f7;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 410px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: center;
+    margin-left: 33%;
+}
+
+form:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 20px rgba(19, 4, 4, 0.6);
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#product_name{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#product_description{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#product_brand{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+select#Category_ID {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #161515;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    font-size: 16px;
+    color: #080707;
+}
+
+#product_image {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}

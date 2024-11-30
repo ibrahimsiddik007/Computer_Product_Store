@@ -1,10 +1,13 @@
 <?php
 session_start();
 include 'db.php';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Sanitize input
+    
     $customer_Email = $conn->real_escape_string($_POST['customer_Email']);
     $customer_password = $conn->real_escape_string($_POST['customer_password']);
+
     // Validate credentials
     $query = "SELECT Customer_ID, First_Name, Last_Name, E_Mail, password FROM Customer WHERE E_Mail = '$customer_Email'";
     $result = $conn->query($query);
@@ -37,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
+        
         function addToCart(productId, categoryId) {
             var quantity = prompt("Enter the quantity:", "1");
             if (quantity != null && quantity > 0) {
@@ -65,21 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 });
             });
 
-            $(document).on('click', '.product-link', function(e) {
-                e.preventDefault();
-                var productId = $(this).data('product-id');
-                $.ajax({
-                    url: 'cust_fetch_product_details.php',
-                    type: 'GET',
-                    data: { product_id: productId },
-                    success: function(response) {
-                        $('#product-details').html(response);
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('AJAX Error: ' + status + error);
-                    }
-                });
-            });
+
 
             $('.owl-carousel').owlCarousel({
                 items: 3,
@@ -107,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     while ($row = $categories_result->fetch_assoc()) {
                         echo "<div class='category-item'>";
                         echo "<a href='cust_categories.php?category_id=" . $row['Category_ID'] . "'>";
-                        echo "<img src='" . $row['Category_Image'] . "' alt='" . $row['Category_Name'] . "' style='width:100px; height:auto;'>";
+                        echo "<img src='" . $row['Category_Image'] . "' alt='" . $row['Category_Name'] . "' style='width:100px; height: auto;;'>";
                         echo "<h3>" . $row['Category_Name'] . "</h3>";
                         echo "</a>";
                         echo "</div>";

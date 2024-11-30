@@ -14,10 +14,6 @@ $product_query = "SELECT product_id, product_name, product_description, price, i
 $product_result = $conn->query($product_query);
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,15 +22,7 @@ $product_result = $conn->query($product_query);
     <title><?php echo htmlspecialchars($category_name); ?> - Computer Product Store</title>
     <link rel="stylesheet" href="assets/css/selected_category_item.css">
     <script>
-        function addToCart(productId, categoryId) {
-            var quantity = prompt("Enter the quantity:", "1");
-            if (quantity != null && quantity > 0) {
-                document.getElementById('product_id').value = productId;
-                document.getElementById('category_id').value = categoryId;
-                document.getElementById('quantity').value = quantity;
-                document.getElementById('add_to_cart_form').submit();
-            }
-        }
+
     </script>
 </head>
 <body>
